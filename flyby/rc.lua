@@ -106,7 +106,7 @@ mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
 
 -- {{{ Wibox
 -- Create a textclock widget
-mytextclock = awful.widget.textclock({ align = "right" })
+mytextclock = awful.widget.textclock({ align = "right" }, ' <span color="#00FF00">%a %d %b, %I:%M </span> ', 60)
 
 -- Create widget
 memwidget = widget({ type = "textbox" })
@@ -114,6 +114,7 @@ cpuwidget = widget({ type = "textbox" })
 uptimewidget = widget({ type = "textbox" })
 netwidget = widget({ type = "textbox" })
 wifiwidget = widget({ type = "textbox" })
+-- batwidget = widget({ type = "textbox" })
 batwidget = awful.widget.progressbar()
   batwidget:set_width(8)
   batwidget:set_height(20)
@@ -124,14 +125,14 @@ batwidget = awful.widget.progressbar()
   batwidget:set_gradient_colors({ "#AECF96", "#88A175", "#FF5656" })
 
 -- Register widget
-vicious.register(memwidget, vicious.widgets.mem, "Mem: $1% ($2MB/$3MB) ", 13)
-vicious.register(netwidget, vicious.widgets.net, "${wlan0 up_kb}kb/s / ${wlan0 down_kb}kb/s ", 1)
-vicious.register(wifiwidget, vicious.widgets.wifi, "SSID: ${ssid} Link: ${link}% ", 5, "wlan0")
-vicious.register(cpuwidget, vicious.widgets.cpu, "Cpu: $1% ")
+vicious.register(memwidget, vicious.widgets.mem, '<span color="#0000FF">Mem:</span> <span color="#00FF00">$1% ($2MB/$3MB)</span> ', 13)
+vicious.register(netwidget, vicious.widgets.net, '<span color="#0000FF">Net:</span> <span color="#00FF00">${wlan0 up_kb}kb/s / ${wlan0 down_kb}kb/s </span> ', 1)
+vicious.register(wifiwidget, vicious.widgets.wifi, '<span color="#0000FF">SSID:</span> <span color="#00FF00">${ssid}</span> <span color="#0000FF">Link:</span> <span color="#00FF00">${link}% </span> ', 5, "wlan0")
+vicious.register(cpuwidget, vicious.widgets.cpu, '<span color="#0000FF">Cpu:</span> <span color="#00FF00">$1%</span> ')
 vicious.register(batwidget, vicious.widgets.bat, "$2", 61, "BAT0")
 vicious.register(uptimewidget, vicious.widgets.uptime,
   function (widget, args)
-      return string.format("Uptime: %2dd %02d:%02d ", args[1], args[2], args[3])
+      return string.format('<span color="#0000FF">Uptime: </span> <span color="#00FF00">%2dd %02d:%02d</span> ', args[1], args[2], args[3])
     end, 61)
 
 -- Create a systray
@@ -220,6 +221,7 @@ for s = 1, screen.count() do
 	}
    mywibox2[s].widgets = {
 	batwidget,
+	uptimewidget,
 	memwidget,
 	cpuwidget,
 	wifiwidget,
