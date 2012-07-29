@@ -8,6 +8,7 @@ require("beautiful")
 require("naughty")
 --set vicious
 local vicious = require("vicious")
+require("calendar2")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -87,7 +88,8 @@ myawesomemenu = {
 }
 programmenu = {
 	{ "open terminal", terminal },
-        { "firefox", "firefox" },
+        { "thunar", "thunar" },
+	{ "firefox", "firefox" },
         { "wicd", "wicd-gtk" },
         { "pidgin", "pidgin" },
         { "skype", "skype" },
@@ -107,6 +109,7 @@ mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
 -- {{{ Wibox
 -- Create a textclock widget
 mytextclock = awful.widget.textclock({ align = "right" }, ' <span color="#00FF00">%a %d %b, %I:%M </span> ', 60)
+calendar2.addCalendarToWidget(mytextclock)
 
 -- Create widget
 memwidget = widget({ type = "textbox" })
