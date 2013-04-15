@@ -1,0 +1,223 @@
+Xcursor.theme:		    Simple-and-Soft
+urxvt*urgentOnBell:     true
+URxvt.loginShell:	    true
+URxvt.depth:		    32
+*.background:	    rgb:12/12/12
+*.foreground:       gray90
+!URxvt.color7:           gray90
+URxvt.colorBD:          #ffffff
+URxvt.cursorColor:      #e0e080
+URxvt.throughColor:     #8080f0
+URxvt.highlightColor:   #f0f0f0
+URxvt.scrollBar:       	off
+URxvt.secondaryScroll:	true
+URxvt*termName:	       	screen-256color
+!URxvt.font: 		9x15
+URxvt.geometry:         154x36
+URxvt.saveLines:        8192
+
+! Fonts
+URxvt.font: -misc-tamsynmod-medium-r-*-*-15-*-*-*-*-*-*-1                                                        
+URxvt.boldFont: -misc-tamsynmod-bold-r-*-*-15-*-*-*-*-*-*-1
+URxvt.italicFont: -misc-tamsynmod-medium-r-*-*-15-*-*-*-*-*-*-1
+URxvt.boldItalicFont: -misc-tamsynmod-bold-r-*-*-15-*-*-*-*-*-*-1
+
+!URxvt.font: -bitstream-bitstream vera sans mono-medium-r-*-*-14-*-*-*-*-*-iso10646-1
+!URxvt.boldFont: -bitstream-bitstream vera sans mono-bold-r-*-*-14-*-*-*-*-*-iso10646-1
+!URxvt.italicFont: -bitstream-bitstream vera sans mono-medium-o-*-*-14-*-*-*-*-*-iso10646-1
+!URxvt.boldItalicFont: -bitstream-bitstream vera sans mono-bold-o-*-*-14-*-*-*-*-*-iso10646-1
+
+!URxvt.font: -*-terminus-medium-r-*-*-14-*-*-*-*-*-iso10646-1
+!URxvt.boldFont: -*-terminus-bold-r-*-*-14-*-*-*-*-*-iso10646-1
+!URxvt.italicFont: -*-terminus-medium-r-*-*-14-*-*-*-*-*-iso10646-1
+!URxvt.boldItalicFont: -*-terminus-bold-r-*-*-14-*-*-*-*-*-iso10646-1
+
+!!!!!!!!!!!!!XTERM!!!!!!!!!!!!!!!!!!!
+xterm*faceName: Bitstream vera sans mono
+xterm*faceSize: 10
+xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+xterm.borderWidth: 0
+!!!!!!!!!!!!!XTERM!!!!!!!!!!!!!!!!!!!
+
+! Extensions
+URxvt*perl-lib:        /usr/lib/urxvt/perl/
+URxvt*perl-ext-common: default,matcher,searchable-scrollback
+URxvt*urlLauncher:     firefox
+URxvt*matcher.button:  1
+
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.dpi: 96
+Xft.rgba: rgb
+
+xcalc*geometry: 200x275
+xcalc.ti.bevel.background: #111111
+xcalc.ti.bevel.screen.background: Green
+xcalc.ti.bevel.screen.DEG.background: Green
+xcalc.ti.bevel.screen.DEG.foreground: Black
+xcalc.ti.bevel.screen.GRAD.background: Green
+xcalc.ti.bevel.screen.GRAD.foreground: Black
+xcalc.ti.bevel.screen.RAD.background: Green
+xcalc.ti.bevel.screen.RAD.foreground: Black
+xcalc.ti.bevel.screen.INV.background: Green
+xcalc.ti.bevel.screen.INV.foreground: Red
+xcalc.ti.bevel.screen.LCD.background: Green
+xcalc.ti.bevel.screen.LCD.foreground: Black
+xcalc.ti.bevel.screen.LCD.shadowWidth: 0
+xcalc.ti.bevel.screen.M.background: Green
+xcalc.ti.bevel.screen.M.foreground: Black
+xcalc.ti.bevel.screen.P.background: Green
+xcalc.ti.bevel.screen.P.foreground: Black
+xcalc.ti.Command.foreground: White
+xcalc.ti.Command.background: black
+xcalc.ti.button5.background: orange
+xcalc.ti.button20.background: red
+xcalc.ti.button25.background: red
+xcalc.ti.button30.background: red
+xcalc.ti.button35.background: red
+xcalc.ti.button40.background: green
+xcalc.ti.button22.background: blue
+xcalc.ti.button23.background: blue
+xcalc.ti.button24.background: blue
+xcalc.ti.button27.background: blue
+xcalc.ti.button28.background: blue
+xcalc.ti.button29.background: blue
+xcalc.ti.button32.background: blue
+xcalc.ti.button33.background: blue
+xcalc.ti.button34.background: blue
+xcalc.ti.button37.background: blue
+XCalc*Cursor:                 hand2
+XCalc*ShapeStyle:             rectangle
+
+!colors ripped from rezza: http://metawire.org/~rezza/index.php
+!*foreground:     rgb:dddddd
+!*background:     rgb:222222
+!black
+*color0:         rgb:19/19/19
+*color8:         rgb:25/25/25
+!red
+*color1:         rgb:80/32/32
+*color9:         rgb:98/2b/2b
+!green
+*color2:         rgb:5b/76/2f
+*color10:        rgb:89/b8/3f
+!brownyellow
+*color3:         rgb:aa/99/43
+*color11:        rgb:ef/ef/60
+!blue
+*color4:         rgb:32/4c/80
+*color12:        rgb:2b/4f/98
+!magenta
+*color5:         rgb:70/6c/9a
+*color13:        rgb:82/6a/b1
+!cyan
+*color6:         rgb:92/b1/9e
+*color14:        rgb:a1/cd/cd
+!white
+*color7:         rgb:ff/ff/ff
+*color15:        rgb:dd/dd/dd
+
+!black
+!URxvt*color0:      #000000
+!URxvt*color8:      #555753
+!red
+!URxvt*color1:      #CC0000
+!URxvt*color9:      #EF2929
+!green
+!URxvt*color2:      #4E9A06
+!URxvt*color10:     #8AE234
+!yellow
+!URxvt*color3:      #C4A000
+!URxvt*color11:     #FCE94F
+!blue
+!URxvt*color4:      #3465A4
+!URxvt*color12:     #729FCF
+!magenta
+!URxvt*color5:      #75507B
+!URxvt*color13:     #AD7FA8
+!cyan
+!URxvt*color6:      #06989A
+!URxvt*color14:     #34E2E2
+!white
+!URxvt*color7:      #D3D7CF
+!URxvt*color15:     #ECEDEE
+
+!!black
+!*color0:    #252525
+!*color8:    #454545
+!!red
+!*color1:     #FF9F95
+!*color9:     #FF8D80
+!!green
+!*color2:    #A6E22E
+!*color10:   #B6E354
+!!yellow
+!*color3:    #FD971F
+!*color11:   #FD971F
+!!blue
+!*color4:    #435e87
+!*color12:   #587aa4
+!!magenta
+!*color5:    #789ec6
+!*color13:   #46a4ff
+!!cyan
+!*color6:    #5E7175
+!*color14:   #A3BABF
+!!white
+!*color7:    #DBDCDC
+!*color15:  #FDFDFD
+
+!! Soft colors
+!black
+!URxvt*color0:           #111313
+!URxvt*color8:           #424446
+!red
+!URxvt*color1:           #9e6b71
+!URxvt*color9:           #b69094
+!green
+!URxvt*color2:           #719e6b
+!URxvt*color10:          #94b690
+!yellow
+!URxvt*color3:           #9e986c
+!URxvt*color11:          #b5b18f
+!blue
+!URxvt*color4:           #6c8b9e
+!URxvt*color12:          #90a7b6
+!magenta
+!URxvt*color5:           #986b9e
+!URxvt*color13:          #b290b6
+!cyan
+!URxvt*color6:           #6b9e98
+!URxvt*color14:          #90b6b3
+!white
+!URxvt*color7:           #b8baba
+!URxvt*color15:          #cdcfce
+
+!Black
+!URxvt*color0:           #3d3e3d
+!URxvt*color8:           #5a5b5c
+!Red
+!URxvt*color1:           #755a5b
+!URxvt*color9:           #a37679
+!Green
+!URxvt*color2:           #68755a
+!URxvt*color10:          #87a376
+!Yellow
+!URxvt*color3:           #756e5a
+!URxvt*color11:          #a39b76
+!Blue
+!URxvt*color4:           #5b6976
+!URxvt*color12:          #758ba3
+!Magenta
+!URxvt*color5:           #755b76
+!URxvt*color13:          #9f76a3
+!Cyan
+!URxvt*color6:           #5b7674
+!URxvt*color14:          #75a3a1
+!White
+!URxvt*color7:           #808080
+!URxvt*color15:          #aeafb0
